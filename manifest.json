@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Site Capture",
+  "version": "0.3.3",
+  "description": "Capture and download data from the current page, with region screenshot capture.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Site Capture"
+  }
+}
